@@ -146,7 +146,7 @@ SELECT nom, SUM(quantite) FROM equipements GROUP BY nom HAVING SUM(quantite)<100
 --order descendant
 SELECT * FROM reservations ORDER BY date_debut DESC;
 
---order descendant
+--order croissant
 SELECT * FROM reservations ORDER BY date_fin ASC;
 
 SELECT * FROM departements WHERE NOT nom='Marketing';
